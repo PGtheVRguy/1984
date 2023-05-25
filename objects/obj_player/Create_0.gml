@@ -34,3 +34,9 @@ state = _state.generic
 //UI
 uiSel = 0
 uiMax = 3
+
+if global.usedElevator = true
+{
+	x = obj_trigger.x
+	y = obj_trigger.y
+}

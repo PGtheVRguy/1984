@@ -1,13 +1,15 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_food",
-  "eventList": [],
+  "name": "obj_init",
+  "eventList": [
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+  ],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "action",
-    "path": "folders/Objects/action.yy",
+    "name": "triggers",
+    "path": "folders/Objects/triggers.yy",
   },
   "parentObjectId": null,
   "persistent": false,
@@ -23,12 +25,13 @@
   "physicsShape": 1,
   "physicsShapePoints": [],
   "physicsStartAwake": true,
-  "properties": [],
+  "properties": [
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"chooseRoom","filters":[
+        "GMRoom",
+      ],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"rm_home","varType":5,},
+  ],
   "solid": false,
-  "spriteId": {
-    "name": "spr_food",
-    "path": "sprites/spr_food/spr_food.yy",
-  },
+  "spriteId": null,
   "spriteMaskId": null,
   "visible": true,
 }

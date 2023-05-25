@@ -1,10 +1,19 @@
 if instance_place(x,y,obj_player)
 {
-	if trig = "elevator"
+	if disableTrig = false
 	{
-		obj_player.elevatorUI = true
+		
+		if trig = "elevator"
+		{
+			obj_player.elevatorUI = true
+		}
+	
 	}
+
+	disableTrig = true
 	
-	
-	
+}
+else
+{
+	disableTrig = false
 }
