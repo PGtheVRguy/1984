@@ -30,8 +30,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_food",
-    "path": "sprites/spr_food/spr_food.yy",
+    "name": "spr_workMachine",
+    "path": "sprites/spr_workMachine/spr_workMachine.yy",
   },
   "spriteMaskId": null,
   "visible": true,

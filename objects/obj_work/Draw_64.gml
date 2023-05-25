@@ -14,11 +14,13 @@ if runGame = true
 		}
 		else
 		{
-			failedNewCounter += 1
-			if failedNewCounter > 9
+			
+			if questionDone > 4
 			{
 				runGame = false
 				p.state = _state.generic
+				global.hour = 16
+				global.worked = true
 			}
 		}
 	}
@@ -61,5 +63,11 @@ if runGame = true
 	{
 		ds_list_add(questionedUsed,question)
 		newQuestion = true
+		global.rep += 2
+		questionDone += 1
+	}
+	if ((input_check_pressed("action")) and (qSel+1 != ds_grid_get(questionsGrid,5,question)))
+	{
+		global.rep -= 6
 	}
 }

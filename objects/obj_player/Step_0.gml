@@ -2,6 +2,7 @@ timer += 1
 switch(state)
 {
 	case _state.generic:
+	ranSleepChance = false
 		if input_check("right")
 		{
 			hsp = walkspeed
@@ -61,19 +62,19 @@ minuteIncrement += 1;
 
 if minuteIncrement >= 60
 {
-	minute += 5;
+	global.minute += 5;
 	
 }
 
-if minute >= 60
+if global.minute >= 60
 {
-	hour += 1;
-	minute = 0;
+	global.hour += 1;
+	global.minute = 0;
 }
-if hour >= 24
+if global.hour >= 24
 {
-	hour = 0;
-	minute = 0;
+	global.hour = 0;
+	global.minute = 0;
 }
 //show_debug_message(string(hour)+":"+string(minute)+":"+string(minuteIncrement))
 
@@ -93,7 +94,7 @@ if instance_place(x,y,obj_food)
 {
 	if ((energy <= 100) and (minuteIncrement >= 60))
 	{
-		energy += 5
+		global.san += 5
 	}
 }
 

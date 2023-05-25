@@ -1,24 +1,24 @@
-Sleep,,,,,,
-Sleep,,,,,,
-Sleep,,,,,,
-Sleep,,,,,,
+Lights Out,,,,,,
+Lights Out,,,,,,
+Lights Out,,,,,,
+Lights Out,,,,,,
 Wakeup,,,,,,
 HEAD TO WORK,,,,,,
 Work,,,,,,
 Work,,,,,,
 Work,,,,,,
-Eat,,,,Job,Time Start,Time End
+Work,,,,Job,Time Start,Time End
 Work,,,,Sleep,0:00,6:00
 Work,,,,Eat,6:00,7:00
 Work,,,,Work,7:00,12:00
 Work,,,,Eat,12:00,12:30
-Work,,,,Work,12:30,18:30
-Eat,,,,Eat,18:30,19:00
+Return Home,,,,Work,12:30,18:30
+Freetime,,,,Eat,18:30,19:00
 Freetime,,,,Freetime,19:00,20:00
 Freetime,,,,Sleep,20:00,24:00:00
 Freetime,,,,,,
-Sleep,,,,,,
-Sleep,,,,,,
-Sleep,,,,,,
-Sleep,,,,,,
-Sleep,,,,,,
+Lights Out,,,,,,
+Lights Out,,,,,,
+Lights Out,,,,,,
+Lights Out,,,,,,
+Lights Out,,,,,,

@@ -3,8 +3,8 @@ vsp = 0;
 walkspeed = 1;
 timer = 0;
 ia = 0;
-
-
+windowHeight = 144
+windowWidth = 160
 
 
 global.schedule = load_csv("schedule.csv");
@@ -13,11 +13,10 @@ global.darkGreen = #306230;
 global.darkerGreen = #0f380f;
 global.lightGreen = #8bac0f;
 global.lighterGreen = #9bbc0f;
-
+ranSleepChance = false
 energy = 60;
 minuteIncrement = 0;
-minute = 0;
-hour = 4;
+
 
 
 elevatorUI = false
@@ -25,7 +24,8 @@ elevatorUI = false
 enum _state
 {
 	generic,
-	UI
+	UI,
+	sleep
 }
 
 state = _state.generic
