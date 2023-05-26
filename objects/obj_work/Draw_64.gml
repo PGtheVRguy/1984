@@ -27,15 +27,17 @@ if runGame = true
 	draw_sprite_ext(spr_uiFade,0,0,0,p.windowWidth/16,p.windowHeight/16,0,-1,1)
 	var textQuestion = ds_grid_get(questionsGrid,0,question)
 	draw_sprite_ext(spr_UI_window,0,p.windowWidth/2,p.windowHeight/2,1,1,0,-1,1)
-	draw_text_scribble(p.windowWidth/2,20,"[fa_center][#0f380f][scale,0.5]"+string(textQuestion))
+	
+	var scrib = scribble("[fa_center][#0f380f][scale,0.5][fo_main]"+string(textQuestion)).wrap(112)
+	//draw_text_scribble(,,).wrap()
 
 
-
+	scrib.draw(p.windowWidth/2,20)
 	dif = 0
 	repeat(4)
 	{
 		var text = ds_grid_get(questionsGrid,dif+1,question)
-		draw_text_scribble(p.windowWidth/2,64+(10*dif),"[scale,0.5][#0f380f]"+string(text))
+		draw_text_scribble(p.windowWidth/2,64+(10*dif),"[scale,0.25][#0f380f]"+string(text))
 		dif += 1
 	}
 	

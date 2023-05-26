@@ -92,7 +92,7 @@ if global.hour >= 24
 
 if instance_place(x,y,obj_food)
 {
-	if ((energy <= 100) and (minuteIncrement >= 60))
+	if ((global.san <= 100) and (minuteIncrement >= 60))
 	{
 		global.san += 5
 	}

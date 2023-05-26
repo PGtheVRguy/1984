@@ -1,7 +1,7 @@
 runGame = false
 
 
-maxQuestions = 8
+maxQuestions = 15
 newQuestion = true
 oldQuestion = 0
 qSel = 1

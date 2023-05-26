@@ -57,11 +57,15 @@ switch(state)
 		sleepTimer += 1
 		if sleepTimer > 120
 		{
-			draw_text_scribble(windowWidth/2,30,"[fa_center][#306230][scale,0.5]" + sleepText)
+			var scribSleepText = scribble("[fa_center][#306230][scale,0.75][fo_main]" + sleepText).wrap(windowWidth-10)
+			scribSleepText.draw(windowWidth/2,30)
 		}
 		if sleepTimer > 180
 		{
-			draw_text_scribble(windowWidth/2,45,"[fa_center][#306230][scale,0.25]Hit your action key to continue")
+			var scribSleepSub = scribble("[fa_center][#306230][scale,0.5][fo_main]Hit your action key to continue").wrap(windowWidth-20)
+			scribSleepSub.draw(windowWidth/2,45)
+			//draw_text_scribble(windowWidth/2,45,)
+			
 			if input_check_pressed("action")
 			{
 				if dead = false
