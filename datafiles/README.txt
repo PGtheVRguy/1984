@@ -14,7 +14,7 @@
       __\ \ \___   \ \ \\ \ \_\ \ \         \ \ \  
      /___\_\/__/\   \ \ \\ \___\ \ \         \ \_\ 
      \_________\/    \_\/ \_______\/          \/_/ 
-				Programmed by Noah Sapelak                                                   
+				Programmed by PGtheVRguy                                                
 			Based off 1984, by George Orwells
 
 
