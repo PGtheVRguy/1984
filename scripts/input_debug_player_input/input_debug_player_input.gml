@@ -1,3 +1,4 @@
+// Feather disable all
 /// Returns an array that contains bindings for each keyboard key, mouse button, and gamepad
 /// button/axis that the player is pressing. This function uses the same ignore/allow/source
 /// filter behaviour as the binding scan feature (see input_binding_scan_params_set())
@@ -30,6 +31,7 @@ function input_debug_player_input(_player_index = 0)
         if (array_length(__source_array) <= 0) return _result;
         if (array_length(_source_filter) <= 0) return _result;
         if (__ghost) return _result;
+        if (!__active) return _result;
         if (!__connected) return _result;
         
         var _ignore_struct = __rebind_ignore_struct;
@@ -83,7 +85,7 @@ function input_debug_player_input(_player_index = 0)
                                 
                                 //On Mac we update the binding label to the actual keyboard character if it is a Basic Latin alphabetic character
                                 //This works around problems where a keyboard might be sending a character code for e.g. A but the OS is typing another letter
-                                if (os_type == os_macosx)
+                                if (__INPUT_ON_MACOS)
                                 {
                                     var _keychar = string_upper(keyboard_lastchar);
                                     
@@ -107,10 +109,9 @@ function input_debug_player_input(_player_index = 0)
                 {
                     if (INPUT_MOUSE_ALLOW_SCANNING)
                     {
-                        if (_global.__mouse_allowed_on_platform && !_global.__window_focus_block_mouse)
+                        if (_global.__mouse_allowed && !_global.__window_focus_block_mouse)
                         {
-                            if (((os_type == os_windows) || !__INPUT_TOUCH_SUPPORT)
-                            && _filter_func(mb_left, _ignore_struct, _allow_struct)
+                            if (_filter_func(mb_left, _ignore_struct, _allow_struct)
                             && mouse_check_button(mb_left))
                             {
                                 array_push(_result, input_binding_mouse_button(mb_left));

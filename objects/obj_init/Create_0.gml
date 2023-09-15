@@ -1,4 +1,6 @@
-global.usedElevator = false
+new_game();
+playedAudio = false
+/*global.usedElevator = false
 
 global.rep = 70
 global.san = 70

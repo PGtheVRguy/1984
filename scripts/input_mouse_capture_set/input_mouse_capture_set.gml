@@ -1,3 +1,4 @@
+// Feather disable all
 /// @desc    Whether to capture the mouse in the game window, and its movement speed for Input's built-in mouse tracking
 /// @param   state
 /// @param   [sensitivity=1]
@@ -9,7 +10,7 @@ function input_mouse_capture_set(_state, _sensitivity = 1)
     static _monitor_coords       = undefined; 
     static _monitor_update_frame = -infinity;
     
-    if (!__INPUT_ON_DESKTOP || __INPUT_ON_WEB)
+    if (!INPUT_ON_PC || INPUT_ON_WEB)
     {
         if (__INPUT_DEBUG_CAPTURE) __input_trace("Mouse capture unsupported for this platform");
         return;

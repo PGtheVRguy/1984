@@ -1,3 +1,4 @@
+// Feather disable all
 /// @desc    Checks if the given button/axis is newly activated this frame
 /// @param   gamepadIndex
 /// @param   GMconstant
@@ -5,8 +6,9 @@
 function input_gamepad_check_pressed(_index, _gm)
 {
     __INPUT_GLOBAL_STATIC_LOCAL  //Set static _global
-    
-    if (_global.__cleared
+        
+    if ((!INPUT_ALLOW_OUT_OF_FOCUS && !_global.__window_focus)
+    ||  _global.__cleared
     ||  (_index == undefined)
     ||  (_index < 0)
     ||  (_index >= array_length(_global.__gamepads)))

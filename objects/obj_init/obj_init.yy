@@ -4,6 +4,7 @@
   "name": "obj_init",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
   ],
   "managed": true,
   "overriddenProperties": [],
@@ -31,7 +32,10 @@
       ],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"rm_title","varType":5,},
   ],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_intro",
+    "path": "sprites/spr_intro/spr_intro.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }

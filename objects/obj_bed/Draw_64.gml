@@ -5,13 +5,13 @@ if runGame = true
 {
 	draw_sprite_ext(spr_uiFade,0,0,0,p.windowWidth/16,p.windowHeight/16,0,-1,1)
 	draw_sprite_ext(spr_UI_window,0,p.windowWidth/2,p.windowHeight/2,1,1,0,-1,1)
-	draw_text_scribble(p.windowWidth/2,20,"[fa_center][#0f380f][scale,0.5]Sleep for the night?")
+	draw_text_scribble(p.windowWidth/2,20,"[fa_center][#0f380f][fo_small]Sleep for the night?")
 
 
 
 	dif = 0
-	draw_text_scribble(p.windowWidth/2,64+(10*0),"[scale,0.5][#0f380f]YES")
-	draw_text_scribble(p.windowWidth/2,64+(10*1),"[scale,0.5][#0f380f]NO")
+	draw_text_scribble(p.windowWidth/2,64+(10*0),"[fo_small][#0f380f]YES")
+	draw_text_scribble(p.windowWidth/2,64+(10*1),"[fo_small][#0f380f]NO")
 	
 	
 	if input_check_pressed("up")
@@ -30,7 +30,7 @@ if runGame = true
 			qSel = 0
 		}
 	}
-	draw_text_scribble(24,64+(10*qSel),"[scale,0.5][#0f380f]>")
+	draw_text_scribble(24,64+(10*qSel),"[fo_small][#0f380f]>")
 	
 	
 	if ((input_check_pressed("action")) and (qSel = 0))

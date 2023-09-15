@@ -6,7 +6,6 @@ ia = 0;
 windowHeight = 144
 windowWidth = 160
 
-
 global.schedule = load_csv("schedule.csv");
 
 global.darkGreen = #306230;

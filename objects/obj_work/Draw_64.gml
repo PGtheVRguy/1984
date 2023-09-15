@@ -28,7 +28,7 @@ if runGame = true
 	var textQuestion = ds_grid_get(questionsGrid,0,question)
 	draw_sprite_ext(spr_UI_window,0,p.windowWidth/2,p.windowHeight/2,1,1,0,-1,1)
 	
-	var scrib = scribble("[fa_center][#0f380f][scale,0.5][fo_main]"+string(textQuestion)).wrap(112)
+	var scrib = scribble("[fa_center][#0f380f][scale,1.5][fo_small]"+string(textQuestion)).wrap(112)
 	//draw_text_scribble(,,).wrap()
 
 
@@ -37,7 +37,7 @@ if runGame = true
 	repeat(4)
 	{
 		var text = ds_grid_get(questionsGrid,dif+1,question)
-		draw_text_scribble(p.windowWidth/2,64+(10*dif),"[scale,0.25][#0f380f]"+string(text))
+		draw_text_scribble(p.windowWidth/2,64+(10*dif),"[fo_small][scale,0.75][#0f380f]"+string(text))
 		dif += 1
 	}
 	
@@ -58,7 +58,7 @@ if runGame = true
 			qSel = 0
 		}
 	}
-	draw_text_scribble(24,64+(10*qSel),"[scale,0.5][#0f380f]>")
+	draw_text_scribble(24,64+(10*qSel),"[fo_small][#0f380f]>")
 	
 	
 	if ((input_check_pressed("action")) and (qSel+1 = ds_grid_get(questionsGrid,5,question)))

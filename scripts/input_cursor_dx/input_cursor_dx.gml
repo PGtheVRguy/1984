@@ -1,3 +1,4 @@
+// Feather disable all
 /// @desc    Returns how far the cursor has moved on the x-axis between frames
 ///          The coordinate space should be a member of the INPUT_COORD_SPACE enum:
 ///              .ROOM      Room coordinates; should be the same as mouse_x and mouse_y. This is the default value
@@ -16,5 +17,5 @@ function input_cursor_dx(_player_index = 0, _output_system = undefined)
     return __input_transform_coordinate(_cursor.__x - _cursor.__prev_x,
                                         _cursor.__y - _cursor.__prev_y,
                                         _cursor.__coord_space,
-                                        _output_system ?? _global.__pointer_coord_space).x;
+                                        _output_system ?? _cursor.__coord_space).x;
 }
