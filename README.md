@@ -52,7 +52,7 @@ Your job is simple, survive.
 ==[HOW TO RUN THE DAMN THING]==
 
 
-I havent paid for my GameMaker: Studio 2 editor license for like half a year so you kinda gotta run this within the GameMaker: Studio 2 editor itself. Its pretty self explanitory, throw the .yyz into GameMaker (its free, can be found on their website or Steam, the latest version works), then hit the silly little run triangle.
+Choose your preferred way of installation through the [RELEASES] tab. 
 
 Gimme your highscore or something by emailing PGtheVRguyGAMES@gmail.com. Its pretty easy to cheat tho, plz dont. There are flaws, this is just a small prototype, so also email those to PGtheVRguyGAMES@gmail.com, I wanna see those flaws too, I love them.
 
